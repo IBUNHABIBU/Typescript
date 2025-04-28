@@ -1,7 +1,7 @@
 import PostCard from "./PostCard"
 
 const getData = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts")
 
     if (!res.ok) {
         throw new Error ("failed to fetch data");
@@ -15,8 +15,6 @@ const PostList = async () => {
 
   return (
     <div className="postlist">
-        {/* <PostCard title="Matangazo" desc="Wanasikitika kufiwa"/> */}
-
         {
             data.map((post: {id: number, title: string, body: string }) => {
                 <PostCard key={post.id} {... post} />
