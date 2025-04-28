@@ -1,6 +1,5 @@
-import React from 'react'
 
-const PostList = () => {
+const PostList = async () => {
   return (
     <div>PostList</div>
   )
