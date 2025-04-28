@@ -3,3 +3,5 @@ export type PostProps = {
     title: string;
     body: string
 }
+
+//postPropes.types.ts
