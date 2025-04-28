@@ -1,5 +1,5 @@
 
-const PostList = () => {
+const PostList = async () => {
   return (
     <div className="postlist">PostList</div>
   )
