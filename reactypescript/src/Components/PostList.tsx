@@ -27,7 +27,7 @@ const PostList = async () => {
     return (
         <div className="postlist">
             <h3>postlist</h3>
-          {data.map((post) => (
+          {posts.map((post) => (
             <PostCard key={post.id} {... post } />
           ))}
         </div>
