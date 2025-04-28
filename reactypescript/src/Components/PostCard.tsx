@@ -1,9 +1,10 @@
 import PostList from "./PostList"
 
-const PostCard = () => {
+const PostCard = (props) => {
   return (
     <div className="postcard">
-        PostCard
+        <h1>{ props.title} </h1>
+        
     </div>
   )
 }
