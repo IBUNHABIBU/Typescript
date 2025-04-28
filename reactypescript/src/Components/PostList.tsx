@@ -1,7 +1,11 @@
 import PostCard from "./PostCard"
 
 const getData = async () => {
-    const res = fetch("https://jsonplaceholder.typicode.com/posts")
+    const res = fetch("https://jsonplaceholder.typicode.com/posts");
+
+    if (!res.ok) {
+        
+    }
 }
 
 const PostList = () => {
