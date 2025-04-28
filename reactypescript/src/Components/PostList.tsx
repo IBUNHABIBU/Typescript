@@ -1,9 +1,9 @@
 import PostCard from "./PostCard"
 
-const PostList = async () => {
+const PostList = () => {
   return (
     <div className="postlist">
-        <PostCard />
+        <PostCard title="Matangazo" desc="Wanasikitika kufiwa"/>
     </div>
   )
 }

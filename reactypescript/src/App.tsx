@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <div>
-        <h1>Ubaya ubwela</h1>
         <PostList />
       </div>
     </>
