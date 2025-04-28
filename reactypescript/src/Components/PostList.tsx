@@ -1,7 +1,10 @@
+import PostCard from "./PostCard"
 
 const PostList = async () => {
   return (
-    <div className="postlist">PostList</div>
+    <div className="postlist">
+        <PostCard />
+    </div>
   )
 }
 

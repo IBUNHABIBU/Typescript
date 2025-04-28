@@ -1,4 +1,3 @@
-import PostList from "./PostList"
 
 const PostCard = (props: { title: string, desc: string }) => {
   return (
