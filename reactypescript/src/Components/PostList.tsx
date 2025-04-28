@@ -4,26 +4,23 @@ import { PostProps } from "../types/types";
 import PostCard from "./PostCard"
 
 
-const getData = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-
-    if (!res.ok) {
-        throw new Error ("failed to fetch data");
-    }
-    return res.json();
-}
-
 const PostList = async () => {
-    const [post, setPost] = useState([])
+    const [posts, setPosts] = useState([])
 
     const data: PostProps[] = await getData();
 
     useEffect(() => {
       
-    
-      return () => {
-      
-      }
+        const getData = async () => {
+            const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+        
+            if (!res.ok) {
+                throw new Error ("failed to fetch data");
+            }
+            const data = await res.json();
+            setPosts(data);
+        }
+        getData()
     }, [])
     
 
