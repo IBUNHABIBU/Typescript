@@ -1,5 +1,6 @@
 
 import './App.css'
+import PostList from './Components/PostList'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <div>
         <h1>Ubaya ubwela</h1>
+        <PostList />
       </div>
     </>
   )
