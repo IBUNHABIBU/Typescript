@@ -5,9 +5,7 @@ import PostCard from "./PostCard"
 
 
 const PostList = async () => {
-    const [posts, setPosts] = useState([])
-
-    const data: PostProps[] = await getData();
+    const [posts, setPosts] = useState<PostProps[]>([])
 
     useEffect(() => {
       
@@ -26,7 +24,8 @@ const PostList = async () => {
 
     return (
         <div className="postlist">
-            <h3>postlist</h3>
+            <h3>p</h3>
+            console.log(posts)
           {posts.map((post) => (
             <PostCard key={post.id} {... post } />
           ))}
