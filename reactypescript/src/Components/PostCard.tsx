@@ -1,5 +1,6 @@
+import { PostProps } from "../types/types"
 
-const PostCard = (props: { title: string, body: string }) => {
+const PostCard = (props: PostProps ) => {
   return (
     <div className="postcard">
         <h1>{ props.title} </h1>

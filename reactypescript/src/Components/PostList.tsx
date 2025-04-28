@@ -1,3 +1,4 @@
+import { PostProps } from "../types/types";
 import PostCard from "./PostCard"
 
 const getData = async () => {
@@ -11,17 +12,15 @@ const getData = async () => {
 
 const PostList = async () => {
 
-    const data = await getData();
+    const data: PostProps[] = await getData();
 
-  return (
-    <div className="postlist">
-        {
-            data.map((post: {id: number, title: string, body: string }) => {
-                <PostCard key={post.id} {... post} />
-            })
-        }
-    </div>
-  )
+    return (
+        <div className="postlist">
+          {data.map((post) => (
+            <PostCard key={post.id} {... post } />
+          ))}
+        </div>
+      )
 }
 
 export default PostList
