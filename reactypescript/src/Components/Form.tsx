@@ -1,17 +1,24 @@
 
 const Form = () => {
+
+    
   return (
     <div>
         <form className="post">
-            <input type="text" />
+            <input type="text" placeholder="search for any thing" />
+            <button onClick={handleClick}>Search</button>
         </form>
 
         <form className="post">
-            <input type="text" />
+            <h1>Lorem, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae velit molestias repellendus quaerat. Nesciunt illum cupiditate commodi alias a? Eveniet quibusdam nihil totam eligendi quaerat fugit quis molestias officia autem.
+            Voluptates dolore eligendi, impedit, molestiae architecto sunt blanditiis veritatis soluta maxime pariatur aspernatur iusto laboriosam hic voluptatem! Error, animi, sint est repudiandae rem ad aut autem at in, veritatis sunt!</p>
         </form>
 
         <form className="post">
-            <input type="text" />
+            <h1>Lorem, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae velit molestias repellendus quaerat. Nesciunt illum cupiditate commodi alias a? Eveniet quibusdam nihil totam eligendi quaerat fugit quis molestias officia autem.
+            Voluptates dolore eligendi, impedit, molestiae architecto sunt blanditiis veritatis soluta maxime pariatur aspernatur iusto laboriosam hic voluptatem! Error, animi, sint est repudiandae rem ad aut autem at in, veritatis sunt!</p>
         </form>
     </div>
   )
