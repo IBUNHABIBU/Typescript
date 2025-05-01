@@ -2,7 +2,12 @@ import React from 'react'
 
 const User = () => {
   return (
-    <div>User</div>
+    <div>
+        <form action="">
+            <input type="text" placeholder='Username'/>
+            <button>Sign in</button>
+        </form>
+    </div>
   )
 }
 
