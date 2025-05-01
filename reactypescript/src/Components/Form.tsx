@@ -9,6 +9,9 @@ const Form = () => {
 
     }
 
+    const handleDelete = (e : React.MouseEvent<HTMLButtonElement>, id: number ) => {
+
+    }
 
   return (
     <div>
