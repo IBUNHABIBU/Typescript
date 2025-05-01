@@ -1,9 +1,9 @@
 import React from 'react'
 
-function child() {
+const Child = () => {
   return (
-    <div>child</div>
+    <div>Child</div>
   )
 }
 
-export default child
+export default Child
