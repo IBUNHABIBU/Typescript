@@ -10,7 +10,8 @@ const Form = () => {
     }
 
     const handleDelete = (e : React.MouseEvent<HTMLButtonElement>, id: number ) => {
-
+        e.preventDefault();
+        console.log(e, "Event")
     }
 
   return (
