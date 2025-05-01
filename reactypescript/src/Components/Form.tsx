@@ -3,15 +3,16 @@ const Form = () => {
 
     const handleClick = ( e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
+        console.log(e.target);
     }
 
-    const handleChange = (e: React.ChangeEventHandler<HTMLInputElement>) => {
-
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        console.log(e.target.value)
     }
 
     const handleDelete = (e : React.MouseEvent<HTMLButtonElement>, id: number ) => {
         e.preventDefault();
-        console.log(e, "Event")
+        console.log(e, id,  ": Event")
     }
 
   return (
