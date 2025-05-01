@@ -5,11 +5,15 @@ const Form = () => {
         e.preventDefault();
     }
 
+    const handleChange = (e: React.ChangeEventHandler<HTMLInputElement>) => {
+
+    }
+
 
   return (
     <div>
         <form className="post">
-            <input type="text" placeholder="search for any thing" />
+            <input type="text" placeholder="search for any thing" onChange={handleChange}/>
             <button onClick={handleClick}>Search</button>
         </form>
 
@@ -17,7 +21,7 @@ const Form = () => {
             <h1>Lorem, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae velit molestias repellendus quaerat. Nesciunt illum cupiditate commodi alias a? Eveniet quibusdam nihil totam eligendi quaerat fugit quis molestias officia autem.
             Voluptates dolore eligendi, impedit, molestiae architecto sunt blanditiis veritatis soluta maxime pariatur aspernatur iusto laboriosam hic voluptatem! Error, animi, sint est repudiandae rem ad aut autem at in, veritatis sunt!</p>
-        <button>delete</button>
+        <button onClick={ ()=> handleDelete(1) }>delete</button>
         </form>
 
         <form className="post">
