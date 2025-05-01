@@ -1,8 +1,11 @@
-import React from 'react'
 
-const Parent = () => {
+const Parent = ({ children }) => {
   return (
-    <div>Parent</div>
+    <div>
+        <h6>This is the parent component</h6>
+
+        { children }
+    </div>
   )
 }
 
