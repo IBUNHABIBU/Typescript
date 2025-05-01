@@ -9,6 +9,10 @@ const Form = () => {
         <form className="post">
             <input type="text" />
         </form>
+
+        <form className="post">
+            <input type="text" />
+        </form>
     </div>
   )
 }
