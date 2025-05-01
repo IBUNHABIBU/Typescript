@@ -1,5 +1,5 @@
 
-const Parent = ({ children }) => {
+const Parent = ({ children }: {children: React.ReactNode }) => {
   return (
     <div>
         <h6>This is the parent component</h6>
@@ -9,4 +9,4 @@ const Parent = ({ children }) => {
   )
 }
 
-export default Parent
+export default Parent;
