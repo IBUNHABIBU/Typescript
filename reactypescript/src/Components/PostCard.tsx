@@ -8,9 +8,6 @@ const PostCard = ({title, body}: PostProps ) => {
         <h1>{ title} </h1>
         <p>{ body } </p>
 
-        <Parent>
-          <Child />
-        </Parent>
     </div>
   )
 }
