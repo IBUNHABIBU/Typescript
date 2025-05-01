@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const User = () => {
+    const [username, setUsername] = useState('');
+    const [user, setUser] = useState(null)
   return (
     <div>
         <form action="">
-            <input type="text" placeholder='Username'/>
-            <button>Sign in</button>
+            <input type="text" placeholder='Username' onChange={handleChange}/>
+            <button onClick={handleClick}>Sign in</button>
         </form>
     </div>
   )
 }
 
-export default User
+export default User;
