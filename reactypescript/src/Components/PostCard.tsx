@@ -1,5 +1,3 @@
-import Child from "../children/Child";
-import Parent from "../children/Parent";
 import { PostProps } from "../types/types"
 
 const PostCard = ({title, body}: PostProps ) => {
