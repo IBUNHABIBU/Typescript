@@ -6,5 +6,6 @@ export type PostProps = {
 
 //postPropes.types.ts
 export type UserType = {
-    name: string
+    name: string,
+    sessionId: number
 }
