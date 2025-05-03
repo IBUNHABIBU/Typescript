@@ -7,6 +7,10 @@ const User = () => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement> ) => {
         setUsername(e.target.value)
     }
+
+    const handleClick = (e : React.MouseEvent<HTMLButtonElement>) => {
+
+    }
   return (
     <div>
         <h3>User</h3>
