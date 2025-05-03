@@ -5,3 +5,6 @@ export type PostProps = {
 }
 
 //postPropes.types.ts
+export type UserType = {
+    name: string
+}
