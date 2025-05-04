@@ -17,5 +17,6 @@ export type StateType = {
 
 
 export type actionType = {
-    type: "CHANGE_THEME" | "CHANGE_FONTSIZE"
+    type: "CHANGE_THEME" | "CHANGE_FONTSIZE",
+    payload: number
 }
