@@ -8,6 +8,11 @@ const INITIAL_STATE = {
 const reducer = (state: StateType, action: actionType) => {
     switch (action.type) {
         case 'CHANGE_FONTSIZE':
+
+            return {
+                ... state,
+                theme: state.theme === "dark" ? "light" : "dark"
+            }
             
             break;
     
