@@ -27,6 +27,7 @@ const User = () => {
             <button onClick={handleClick}>Sign in</button>
         </form>)
         }
+        { user?.name }
     </div>
   )
 }
