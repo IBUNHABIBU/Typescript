@@ -17,6 +17,5 @@ export type StateType = {
 
 
 export type actionType = {
-    theme: string,
-    fontSize: number
+    
 }
