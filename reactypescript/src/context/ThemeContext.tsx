@@ -1,9 +1,15 @@
-import React from 'react'
-
-const ThemeContext = () => {
-  return (
-    <div>ThemeContext</div>
-  )
+const INITIAL_STATE = {
+    theme: "dark",
+    fontSize: 16,
 }
 
-export default ThemeContext
+const reducer = (state, action) => {
+    switch (key) {
+        case value:
+            
+            break;
+    
+        default:
+            break;
+    }
+}
