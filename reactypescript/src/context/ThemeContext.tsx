@@ -6,8 +6,8 @@ const INITIAL_STATE = {
 }
 
 const reducer = (state: StateType, action: actionType) => {
-    switch (key) {
-        case value:
+    switch (action.type) {
+        case 'CHANGE_FONTSIZE':
             
             break;
     
