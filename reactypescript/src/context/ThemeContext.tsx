@@ -13,9 +13,11 @@ const reducer = (state: StateType, action: actionType) => {
                 ... state,
                 theme: state.theme === "dark" ? "light" : "dark"
             }
-            
-            break;
-    
+        case 'CHANGE_FONTSIZE':
+            return {
+                ... state,
+                
+            }
         default:
             break;
     }
