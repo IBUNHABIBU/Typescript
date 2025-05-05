@@ -1,9 +1,12 @@
+import { createContext } from "react";
 import { actionType, StateType } from "../types/types";
 
 const INITIAL_STATE = {
     theme: "dark",
     fontSize: 16,
 }
+
+export const ThemeContext = createContext
 
 const reducer = (state: StateType, action: actionType) => {
     switch (action.type) {
@@ -19,6 +22,6 @@ const reducer = (state: StateType, action: actionType) => {
                 fontSize: action.payload
             }
         default:
-            break;
+            return state;
     }
 }
