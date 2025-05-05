@@ -16,7 +16,7 @@ const reducer = (state: StateType, action: actionType) => {
         case 'CHANGE_FONTSIZE':
             return {
                 ... state,
-                
+                fontSize: action.payload
             }
         default:
             break;
