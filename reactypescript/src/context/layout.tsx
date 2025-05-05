@@ -6,7 +6,7 @@ const layout = ({children}: { children : React.ReactNode}) => {
   return (
     <div>
         <html lang='eng'>
-            <body className={inter.className}>
+            <body className="bodyclass">
                 <ThemeProvder>
                     <div className="container">
                         <NavBar />

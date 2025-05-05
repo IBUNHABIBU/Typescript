@@ -1,6 +1,8 @@
 import React from 'react'
+import { ThemeContext } from '../context/ThemeContext'
 
 const Page = () => {
+    const { state, dispatch } = useContext(ThemeContext)
   return (
     <div>
         <div className="useContextExample">
