@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useReducer } from "react";
 import { actionType, StateType } from "../types/types";
 
 const INITIAL_STATE = {
@@ -32,9 +32,9 @@ const reducer = (state: StateType, action: actionType) => {
 }
 
 export const ThemeProvder = ({children}: {children: React.ReactNode}) => {
-    const [state, dispatch] = useReducer()
+    const [state, dispatch] = useReducer(reducer, INITIAL_STATE)
     return (
-        <ThemeContext.Provider>
+        <ThemeContext.Provider value={{state, dispatch}}>
             {children}
         </ThemeContext.Provider>
     )
