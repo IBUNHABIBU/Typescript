@@ -32,5 +32,9 @@ const reducer = (state: StateType, action: actionType) => {
 }
 
 export const ThemeProvder = ({children}: {children: React.ReactNode}) => {
-    
+    return (
+        <ThemeContext.Provider>
+            {children}
+        </ThemeContext.Provider>
+    )
 }
