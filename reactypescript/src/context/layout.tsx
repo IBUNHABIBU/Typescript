@@ -11,8 +11,7 @@ const layout = ({children}: { children : React.ReactNode}) => {
                     <NavBar />
                     {children}
                 </div>
-                </ThemeProvder>
-                
+                </ThemeProvder> 
             </body>
         </html>
     </div>
