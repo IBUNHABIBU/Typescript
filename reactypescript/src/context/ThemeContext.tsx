@@ -6,7 +6,12 @@ const INITIAL_STATE = {
     fontSize: 16,
 }
 
-export const ThemeContext = createContext
+export const ThemeContext = createContext<{state: StateType, dispatch: React.Dispatch<actionType>}>({
+    state: INITIAL_STATE, 
+    dispatch: () => {
+
+    }
+})
 
 const reducer = (state: StateType, action: actionType) => {
     switch (action.type) {
@@ -24,4 +29,8 @@ const reducer = (state: StateType, action: actionType) => {
         default:
             return state;
     }
+}
+
+export const ThemeProvder = ({children}: {children: React.ReactNode}) => {
+    
 }
