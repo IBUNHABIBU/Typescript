@@ -7,10 +7,10 @@ const layout = ({children}: { children : React.ReactNode}) => {
         <html lang='eng'>
             <body className={inter.className}>
                 <ThemeProvder>
-                <div className="container">
-                    <NavBar />
-                    {children}
-                </div>
+                    <div className="container">
+                        <NavBar />
+                        {children}
+                    </div>
                 </ThemeProvder> 
             </body>
         </html>
